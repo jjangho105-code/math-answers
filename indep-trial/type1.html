@@ -2,7 +2,7 @@
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>1번 유형 더 풀기 · 사건의 독립과 독립시행의 확률</title>
+<title>1번 유형 더 풀기(기본) · 사건의 독립과 독립시행의 확률</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -50,6 +50,10 @@
   details[open] summary { color: var(--muted); border-color: var(--line); }
   summary:focus-visible, .back:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .ans { margin-top: 8px; font-size: 20px; font-weight: 800; color: var(--accent); }
+  .lv { display: inline-block; margin-left: 4px; font-size: 12px; font-weight: 800; color: var(--fg); border: 1.2px solid var(--fg); border-radius: 4px; padding: 0 6px; letter-spacing: 0; }
+  .formula { border: 1.5px solid var(--accent); border-radius: 12px; padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .formula .fl { font-size: 13px; font-weight: 800; color: var(--accent); }
+  .formula .fx { font-size: 16px; overflow-x: auto; }
   footer { font-size: 13px; color: var(--muted); text-align: center; }
   .katex { font-size: 1.05em; }
 </style>
@@ -57,7 +61,7 @@
 <div class="wrap">
   <a class="back" href="./#setA">← 정답 페이지로 돌아가기</a>
   <header>
-    <div class="eyebrow">사건의 독립과 독립시행의 확률 · 1번 유형 더 풀기</div>
+    <div class="eyebrow">사건의 독립과 독립시행의 확률 · 1번 유형 더 풀기 <span class="lv">기본</span></div>
     <h1><span>독립인 사건 판별</span></h1>
     <div class="sub">비슷한 문제 4개입니다. 끝까지 풀고 나서 정답 보기를 눌러 확인하세요.</div>
   </header>
@@ -81,6 +85,7 @@
     <div class="body"><p>1부터 20까지의 자연수가 하나씩 적힌 20장의 카드 중에서 임의로 한 장의 카드를 뽑는 시행에서 짝수가 적힌 카드가 나오는 사건을 \(A\), 5의 배수가 적힌 카드가 나오는 사건을 \(B\), 소수가 적힌 카드가 나오는 사건을 \(C\)라 하자. 서로 독립인 사건만을 보기에서 있는 대로 고르시오.</p><div class="rule">ㄱ. \(A\)와 \(B\) &nbsp;&nbsp; ㄴ. \(B\)와 \(C\) &nbsp;&nbsp; ㄷ. \(C\)와 \(A\)</div></div>
     <details><summary>정답 보기</summary><div class="ans">ㄱ</div></details>
   </article>
+  <aside class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">\(A,\ B\)가 서로 독립 \(\iff \mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B)\)</div></aside>
   <footer>사건의 독립과 독립시행의 확률 · 이것만은 반드시 유형 연습</footer>
 </div>
 </body></html>
