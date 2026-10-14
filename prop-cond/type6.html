@@ -62,7 +62,7 @@
   .more:hover { background: var(--accent-soft); }
   .more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg);
-        display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-block: 8px; }
+        display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; padding-block: 8px; }
   nav a { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--fg);
           border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 6px; background: var(--surface); }
   nav a b { font-size: 16px; }
@@ -86,30 +86,30 @@
   <a class="back" href="./#setB">← 정답 페이지로 돌아가기</a>
   <header>
     <div class="eyebrow">명제와 조건 · 6번 유형 더 풀기 <span class="lv">심화</span></div>
-    <h1><span>조건의 부정 (많아야·적어도)</span></h1>
+    <h1><span>반례가 되는 원소의 집합</span></h1>
     <div class="sub">비슷한 문제 4개입니다. 끝까지 풀고 나서 정답 보기를 눌러 확인하세요.</div>
   </header>
   <article class="q">
-    <div class="qhead"><div class="no">1</div><div class="qtag">조건의 부정 (많아야·적어도)</div></div>
-    <div class="body"><p>실수 \(x\), \(y\)에 대하여 조건 ‘\(x=0\) 그리고 \(y=0\)’의 부정을 구하시오.</p></div>
-    <details><summary>정답 보기</summary><div class="ans">\(x\ne 0\) 또는 \(y\ne 0\)</div></details>
+    <div class="qhead"><div class="no">1</div><div class="qtag">반례가 되는 원소의 집합</div></div>
+    <div class="body"><p>전체집합 \(U\)에 대하여 두 조건 \(p\), \(q\)의 진리집합을 각각 \(P\), \(Q\)라 할 때, 명제 ‘\(\sim p\)이면 \(\sim q\)이다.’가 거짓임을 보이는 모든 원소로만 이루어진 집합을 \(P\), \(Q\)를 사용하여 나타내시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(Q-P\) &nbsp;(\(=P^{C}\cap Q\))</div></details>
   </article>
   <article class="q">
-    <div class="qhead"><div class="no">2</div><div class="qtag">조건의 부정 (많아야·적어도)</div></div>
-    <div class="body"><p>실수 \(x\)에 대하여 조건 ‘\(-1&lt;x\le 4\)’의 부정을 구하시오.</p></div>
-    <details><summary>정답 보기</summary><div class="ans">\(x\le -1\) 또는 \(x>4\)</div></details>
+    <div class="qhead"><div class="no">2</div><div class="qtag">반례가 되는 원소의 집합</div></div>
+    <div class="body"><p>전체집합 \(U\)에 대하여 세 조건 \(p\), \(q\), \(r\)의 진리집합을 각각 \(P\), \(Q\), \(R\)라 할 때, 명제 ‘\(p\) 그리고 \(q\)이면 \(r\)이다.’가 거짓임을 보이는 모든 원소로만 이루어진 집합을 \(P\), \(Q\), \(R\)를 사용하여 나타내시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\((P\cap Q)-R\)</div></details>
   </article>
   <article class="q">
-    <div class="qhead"><div class="no">3</div><div class="qtag">조건의 부정 (많아야·적어도)</div></div>
-    <div class="body"><p>조건 ‘철수의 국어 점수는 80점 이상이고 수학 점수는 많아야 90점이다.’의 부정을 구하시오. (단, 점수는 자연수이다.)</p></div>
-    <details><summary>정답 보기</summary><div class="ans">철수의 국어 점수는 80점 미만이거나 수학 점수는 적어도 91점이다.</div></details>
+    <div class="qhead"><div class="no">3</div><div class="qtag">반례가 되는 원소의 집합</div></div>
+    <div class="body"><p>전체집합 \(U\)에 대하여 세 조건 \(p\), \(q\), \(r\)의 진리집합을 각각 \(P\), \(Q\), \(R\)라 할 때, 명제 ‘\(p\)이면 \(q\) 그리고 \(r\)이다.’가 거짓임을 보이는 모든 원소로만 이루어진 집합을 \(P\), \(Q\), \(R\)를 사용하여 나타내시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(P-(Q\cap R)\) &nbsp;(\(=P\cap(Q^{C}\cup R^{C})\))</div></details>
   </article>
   <article class="q">
-    <div class="qhead"><div class="no">4</div><div class="qtag">조건의 부정 (많아야·적어도)</div></div>
-    <div class="body"><p>실수 \(x\), \(y\)에 대하여 조건 ‘\(xy=0\)’의 부정을 ‘\(\square\) 그리고 \(\square\)’ 꼴로 나타내시오.</p></div>
-    <details><summary>정답 보기</summary><div class="ans">\(x\ne 0\) 그리고 \(y\ne 0\)</div></details>
+    <div class="qhead"><div class="no">4</div><div class="qtag">반례가 되는 원소의 집합</div></div>
+    <div class="body"><p>전체집합 \(U=\{x\mid x\text{는 20 이하의 자연수}\}\)에 대하여 세 조건 \(p\): \(x\)는 소수이다, \(q\): \(x\)는 홀수이다, \(r\): \(x>10\) 이 있다. 명제 ‘\(p\)이면 \(q\) 그리고 \(r\)이다.’가 거짓임을 보이는 원소의 개수를 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(4\)</div></details>
   </article>
-  <aside class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">‘\(p\) 또는 \(q\)’의 부정 \(=\) ‘\(\sim p\) 그리고 \(\sim q\)’, ‘\(p\) 그리고 \(q\)’의 부정 \(=\) ‘\(\sim p\) 또는 \(\sim q\)’ <br>‘많아야 \(n\)’의 부정 \(=\) ‘적어도 \(n+1\)’ (개수가 자연수일 때)</div></aside>
+  <aside class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">명제 \(p\longrightarrow q\)가 거짓임을 보이는 원소(반례)의 집합 \(=P\cap Q^{C}=P-Q\)</div></aside>
   <footer>명제와 조건 · 이것만은 반드시 유형 연습</footer>
 </div>
 </body></html>

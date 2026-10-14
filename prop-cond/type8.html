@@ -62,7 +62,7 @@
   .more:hover { background: var(--accent-soft); }
   .more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg);
-        display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-block: 8px; }
+        display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; padding-block: 8px; }
   nav a { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--fg);
           border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 6px; background: var(--surface); }
   nav a b { font-size: 16px; }
@@ -86,30 +86,30 @@
   <a class="back" href="./#setB">← 정답 페이지로 돌아가기</a>
   <header>
     <div class="eyebrow">명제와 조건 · 8번 유형 더 풀기 <span class="lv">심화</span></div>
-    <h1><span>포함 관계와 항상 참인 명제</span></h1>
+    <h1><span>두 명제가 참이 되는 미지수</span></h1>
     <div class="sub">비슷한 문제 4개입니다. 끝까지 풀고 나서 정답 보기를 눌러 확인하세요.</div>
   </header>
   <article class="q">
-    <div class="qhead"><div class="no">1</div><div class="qtag">포함 관계와 항상 참인 명제</div></div>
-    <div class="body"><p>전체집합 \(U\)에 대하여 세 조건 \(p\), \(q\), \(r\)의 진리집합을 각각 \(P\), \(Q\), \(R\)라 하자. \(P\cup Q^{C}=U\), \(Q\cap R^{C}=\varnothing\)일 때, 항상 참인 명제만을 보기에서 있는 대로 고르시오.</p><div class="rule">ㄱ. \(\sim p\longrightarrow \sim q\) &nbsp;&nbsp; ㄴ. \(r\longrightarrow p\) &nbsp;&nbsp; ㄷ. \(\sim r\longrightarrow \sim q\)</div></div>
-    <details><summary>정답 보기</summary><div class="ans">ㄱ, ㄷ</div></details>
+    <div class="qhead"><div class="no">1</div><div class="qtag">두 명제가 참이 되는 미지수</div></div>
+    <div class="body"><p>두 조건 \(p\): \(|x-a|&lt;2\), \(q\): \(-1&lt;x&lt;6\)에 대하여 명제 \(p\longrightarrow q\)가 참이 되도록 하는 정수 \(a\)의 개수를 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(4\)</div></details>
   </article>
   <article class="q">
-    <div class="qhead"><div class="no">2</div><div class="qtag">포함 관계와 항상 참인 명제</div></div>
-    <div class="body"><p>전체집합 \(U\)에 대하여 세 조건 \(p\), \(q\), \(r\)의 진리집합을 각각 \(P\), \(Q\), \(R\)라 하자. \((P-Q)\cup(Q-R)=\varnothing\)일 때, 항상 참인 명제만을 보기에서 있는 대로 고르시오.</p><div class="rule">ㄱ. \(p\longrightarrow r\) &nbsp;&nbsp; ㄴ. \(\sim r\longrightarrow \sim p\) &nbsp;&nbsp; ㄷ. \(r\longrightarrow q\)</div></div>
-    <details><summary>정답 보기</summary><div class="ans">ㄱ, ㄴ</div></details>
+    <div class="qhead"><div class="no">2</div><div class="qtag">두 명제가 참이 되는 미지수</div></div>
+    <div class="body"><p>두 조건 \(p\): \(x^{2}-4x-5\le 0\), \(q\): \(|x-1|\le a\)에 대하여 명제 \(p\longrightarrow q\)가 참이 되도록 하는 양수 \(a\)의 최솟값을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(4\)</div></details>
   </article>
   <article class="q">
-    <div class="qhead"><div class="no">3</div><div class="qtag">포함 관계와 항상 참인 명제</div></div>
-    <div class="body"><p>전체집합 \(U\)에 대하여 세 조건 \(p\), \(q\), \(r\)의 진리집합을 각각 \(P\), \(Q\), \(R\)라 하자. \(P\cap Q=\varnothing\), \(R^{C}\cup Q=U\)일 때, 항상 참인 명제만을 보기에서 있는 대로 고르시오.</p><div class="rule">ㄱ. \(r\longrightarrow \sim p\) &nbsp;&nbsp; ㄴ. \(p\longrightarrow \sim r\) &nbsp;&nbsp; ㄷ. \(\sim q\longrightarrow \sim r\)</div></div>
-    <details><summary>정답 보기</summary><div class="ans">ㄱ, ㄴ, ㄷ</div></details>
+    <div class="qhead"><div class="no">3</div><div class="qtag">두 명제가 참이 되는 미지수</div></div>
+    <div class="body"><p>두 조건 \(p\): \(a\le x\le a+3\), \(q\): \(x^{2}-8x+12\le 0\)에 대하여 명제 \(p\longrightarrow q\)가 참이 되도록 하는 실수 \(a\)의 최댓값과 최솟값의 합을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(5\)</div></details>
   </article>
   <article class="q">
-    <div class="qhead"><div class="no">4</div><div class="qtag">포함 관계와 항상 참인 명제</div></div>
-    <div class="body"><p>전체집합 \(U\)에 대하여 세 조건 \(p\), \(q\), \(r\)의 진리집합을 각각 \(P\), \(Q\), \(R\)라 하자. \((P\cup Q)\cap R=R\), \(P\cap R=\varnothing\)일 때, 항상 참인 명제만을 보기에서 있는 대로 고르시오.</p><div class="rule">ㄱ. \(q\longrightarrow r\) &nbsp;&nbsp; ㄴ. \(r\longrightarrow q\) &nbsp;&nbsp; ㄷ. \(\sim q\longrightarrow \sim r\)</div></div>
-    <details><summary>정답 보기</summary><div class="ans">ㄴ, ㄷ</div></details>
+    <div class="qhead"><div class="no">4</div><div class="qtag">두 명제가 참이 되는 미지수</div></div>
+    <div class="body"><p>\(x\)에 대한 세 조건 \(p\): \(|x-a|\le 1\), \(q\): \(x>2\), \(r\): \(x^{2}-10x+9&lt;0\)에 대하여 두 명제 \(p\longrightarrow q\), \(p\longrightarrow r\)이 모두 참이 되도록 하는 모든 정수 \(a\)의 값의 합을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(22\)</div></details>
   </article>
-  <aside class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">\(p\longrightarrow q\)가 참 \(\iff P\subset Q\) &nbsp;(\(\sim p\)의 진리집합은 \(P^{C}\))</div></aside>
+  <aside class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">\(p\longrightarrow q\)가 참 \(\iff P\subset Q\) — 수직선 위에서 \(P\)가 \(Q\) 안에 들어가도록 끝점을 비교한다</div></aside>
   <footer>명제와 조건 · 이것만은 반드시 유형 연습</footer>
 </div>
 </body></html>
