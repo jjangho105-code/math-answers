@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>기본 5번 유형 더 풀기 · 명제의 역과 대우·절대부등식</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+<style>
+  :root {
+    --bg: #fbfaf9; --surface: #ffffff; --fg: #1b1a1a; --muted: #6b6464;
+    --line: #e6e0de; --accent: #c8102e; --accent-soft: #fbeef0;
+    --font-ui: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 16px; line-height: 1.75; word-break: keep-all; }
+  .wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 48px; display: flex; flex-direction: column; gap: 18px; }
+  .back { font-size: 14px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+  header { display: flex; flex-direction: column; gap: 4px; border-bottom: 2px solid var(--fg); padding-bottom: 14px; }
+  .eyebrow { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; }
+  h1 { margin: 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; text-wrap: balance; }
+  h1 span { color: var(--accent); }
+  .sub { font-size: 14px; color: var(--muted); }
+  .q { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .qhead { display: flex; align-items: center; gap: 10px; }
+  .no { flex: 0 0 auto; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--fg); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; }
+  .qtag { font-size: 13px; color: var(--muted); }
+  .body { min-width: 0; overflow-x: auto; }
+  .body p { margin: 0 0 6px; }
+  .disp { text-align: center; margin: 6px 0; overflow-x: auto; }
+  .fig { display: flex; justify-content: center; color: var(--fg); }
+  .fig svg { max-width: 100%; height: auto; }
+  .note { text-align: right; font-size: 14px; color: var(--muted); }
+  .tblwrap { overflow-x: auto; }
+  table.t { border-collapse: collapse; margin: 6px auto; font-size: 15px; }
+  table.t td { border: 1px solid var(--muted); padding: 6px 12px; text-align: center; }
+  .rule { border: 1px solid var(--muted); border-radius: 8px; padding: 8px 12px; font-size: 15px; margin: 4px 0; }
+  details { border-top: 1px dashed var(--line); padding-top: 8px; }
+  summary { cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 999px; padding: 4px 14px; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] summary { color: var(--muted); border-color: var(--line); }
+  summary:focus-visible, .back:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ans { margin-top: 8px; font-size: 20px; font-weight: 800; color: var(--accent); }
+  .lv { display: inline-block; margin-left: 4px; font-size: 12px; font-weight: 800; color: var(--fg); border: 1.2px solid var(--fg); border-radius: 4px; padding: 0 6px; letter-spacing: 0; }
+  .formula { border: 1.5px solid var(--accent); border-radius: 12px; padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .formula .fl { font-size: 13px; font-weight: 800; color: var(--accent); }
+  .formula .fx { font-size: 16px; overflow-x: auto; }
+  footer { font-size: 13px; color: var(--muted); text-align: center; }
+  .katex { font-size: 1.05em; }
+
+  .more { align-self: flex-end; font-size: 14px; font-weight: 700; color: var(--accent); text-decoration: none;
+          border: 1.5px solid var(--accent); border-radius: 999px; padding: 3px 12px; }
+  .more:hover { background: var(--accent-soft); }
+  .more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg);
+        display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-block: 8px; }
+  nav a { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: var(--fg);
+          border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 6px; background: var(--surface); }
+  nav a b { font-size: 16px; }
+  nav a small { font-size: 12px; color: var(--muted); }
+  nav a.on { border-color: var(--accent); }
+  nav a.on b { color: var(--accent); }
+  nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  section { display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 80px; }
+  section h2 { margin: 6px 0 2px; font-size: 18px; font-weight: 800; display: flex; align-items: baseline; gap: 8px; }
+  section h2 small { font-size: 13px; font-weight: 500; color: var(--muted); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+          display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .row { display: flex; align-items: center; gap: 12px; }
+  .tag { flex: 1 1 auto; min-width: 0; font-size: 13px; color: var(--muted); }
+  .card .ans { margin-top: 0; flex: 0 1 auto; max-width: 60%; font-size: 20px; font-weight: 800; color: var(--accent); text-align: right; }
+  .ans.txt { font-size: 16px; line-height: 1.6; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head><body>
+
+<div class="wrap">
+  <a class="back" href="./#setA">← 정답 페이지로 돌아가기</a>
+  <header>
+    <div class="eyebrow">명제의 역과 대우·절대부등식 · 기본 5번 유형 더 풀기 <span class="lv">기본</span></div>
+    <h1><span>산술평균과 기하평균 (곱의 최솟값)</span></h1>
+    <div class="sub">비슷한 문제 4개입니다. 끝까지 풀고 나서 정답 보기를 눌러 확인하세요.</div>
+  </header>
+  <article class="q">
+    <div class="qhead"><div class="no">1</div><div class="qtag">산술평균과 기하평균 (곱의 최솟값)</div></div>
+    <div class="body"><p>\(x>0\)일 때, \(x+\dfrac{4}{x}\)의 최솟값을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(4\)</div></details>
+  </article>
+  <article class="q">
+    <div class="qhead"><div class="no">2</div><div class="qtag">산술평균과 기하평균 (곱의 최솟값)</div></div>
+    <div class="body"><p>두 양수 \(x\), \(y\)가 \(xy=8\)을 만족시킬 때, \(2x+y\)의 최솟값을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(8\)</div></details>
+  </article>
+  <article class="q">
+    <div class="qhead"><div class="no">3</div><div class="qtag">산술평균과 기하평균 (곱의 최솟값)</div></div>
+    <div class="body"><p>두 양수 \(x\), \(y\)에 대하여 \(\left(x+\dfrac{1}{y}\right)\left(y+\dfrac{4}{x}\right)\)의 최솟값을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(9\)</div></details>
+  </article>
+  <article class="q">
+    <div class="qhead"><div class="no">4</div><div class="qtag">산술평균과 기하평균 (곱의 최솟값)</div></div>
+    <div class="body"><p>\(x>1\)일 때, \(x+\dfrac{9}{x-1}\)의 최솟값을 구하시오.</p></div>
+    <details><summary>정답 보기</summary><div class="ans">\(7\)</div></details>
+  </article>
+  <aside class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">\(a>0,\ b>0\)일 때 \(a+b\ge 2\sqrt{ab}\) (등호는 \(a=b\)) — 곱을 전개한 뒤 적용하고 등호 조건을 확인</div></aside>
+  <footer>명제의 역과 대우·절대부등식 · 이것만은 반드시 유형 연습</footer>
+</div>
+</body></html>
