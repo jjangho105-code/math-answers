@@ -93,28 +93,35 @@
     <h1>사건의 독립과 <span>독립시행의 확률</span></h1>
     <div class="sub">먼저 끝까지 풀어 본 뒤에 정답을 확인하세요.</div>
   </header>
-  <section id="answers">
-    <h2>연습문제 <small>1~8번</small></h2>
+  <nav aria-label="세트 선택">
+    <a href="#setA" id="navA"><b>연습문제 A</b><small>1~4번</small></a>
+    <a href="#setB" id="navB"><b>연습문제 B</b><small>5~8번</small></a>
+  </nav>
+  <section id="setA">
+    <h2>연습문제 A <small>1~4번</small></h2>
     <div class="card">
       <div class="row"><div class="no">1</div><div class="tag">독립인 사건 판별</div><div class="ans">④ ㄱ, ㄴ</div></div>
     </div>
     <div class="card">
-      <div class="row"><div class="no">2</div><div class="tag">독립인 사건 판별</div><div class="ans">① ㄱ</div></div>
+      <div class="row"><div class="no">2</div><div class="tag">독립일 때의 곱셈정리</div><div class="ans">③ <span class="frac"><span>3</span><span>8</span></span></div></div>
     </div>
     <div class="card">
-      <div class="row"><div class="no">3</div><div class="tag">독립일 때의 곱셈정리</div><div class="ans">③ <span class="frac"><span>3</span><span>8</span></span></div></div>
+      <div class="row"><div class="no">3</div><div class="tag">독립시행의 확률</div><div class="ans">④ <span class="frac"><span>16</span><span>27</span></span></div></div>
     </div>
     <div class="card">
-      <div class="row"><div class="no">4</div><div class="tag">독립일 때의 곱셈정리</div><div class="ans">⑤ <span class="frac"><span>1</span><span>2</span></span></div></div>
+      <div class="row"><div class="no">4</div><div class="tag">독립시행 + 조건부확률</div><div class="ans">③ <span class="frac"><span>43</span><span>91</span></span></div></div>
+    </div>
+  </section>
+  <section id="setB">
+    <h2>연습문제 B <small>5~8번</small></h2>
+    <div class="card">
+      <div class="row"><div class="no">5</div><div class="tag">독립인 사건 판별</div><div class="ans">① ㄱ</div></div>
     </div>
     <div class="card">
-      <div class="row"><div class="no">5</div><div class="tag">독립시행의 확률</div><div class="ans">④ <span class="frac"><span>16</span><span>27</span></span></div></div>
+      <div class="row"><div class="no">6</div><div class="tag">독립일 때의 곱셈정리</div><div class="ans">⑤ <span class="frac"><span>1</span><span>2</span></span></div></div>
     </div>
     <div class="card">
-      <div class="row"><div class="no">6</div><div class="tag">독립시행의 확률</div><div class="ans">② <span class="frac"><span>81</span><span>125</span></span></div></div>
-    </div>
-    <div class="card">
-      <div class="row"><div class="no">7</div><div class="tag">독립시행 + 조건부확률</div><div class="ans">③ <span class="frac"><span>43</span><span>91</span></span></div></div>
+      <div class="row"><div class="no">7</div><div class="tag">독립시행의 확률</div><div class="ans">② <span class="frac"><span>81</span><span>125</span></span></div></div>
     </div>
     <div class="card">
       <div class="row"><div class="no">8</div><div class="tag">독립시행 + 조건부확률</div><div class="ans">⑤ <span class="frac"><span>80</span><span>121</span></span></div></div>
@@ -122,4 +129,14 @@
   </section>
   <footer>사건의 독립과 독립시행의 확률 · 이것만은 반드시 연습문제</footer>
 </div>
+<script>
+  (function () {
+    var a = document.getElementById('navA'), b = document.getElementById('navB');
+    function mark() {
+      var onB = location.hash === '#setB';
+      a.classList.toggle('on', !onB); b.classList.toggle('on', onB);
+    }
+    window.addEventListener('hashchange', mark); mark();
+  })();
+</script>
 </body></html>
