@@ -1,0 +1,53 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>증가·감소·극값과 최대·최소 정답</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script><style>  :root { --bg:#fbfaf9; --surface:#ffffff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+    --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 16px; line-height: 1.75; word-break: keep-all; }
+  .wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 48px; display: flex; flex-direction: column; gap: 18px; }
+  .back { font-size: 14px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+  header { display: flex; flex-direction: column; gap: 4px; border-bottom: 2px solid var(--fg); padding-bottom: 14px; }
+  .eyebrow { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; }
+  h1 { margin: 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; text-wrap: balance; }
+  h1 span { color: var(--accent); }
+  h2 { margin: 6px 0 0; font-size: 17px; font-weight: 800; }
+  section { display:flex; flex-direction:column; gap:12px; scroll-margin-top:12px; }
+  .jump { display:flex; gap:10px; }
+  .jump a { flex:1; text-align:center; font-weight:800; font-size:15px; color:var(--fg); text-decoration:none; border:1.5px solid var(--fg); border-radius:10px; padding:8px 0; }
+  .sub { font-size: 14px; color: var(--muted); }
+  .q { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .qhead { display: flex; align-items: center; gap: 10px; }
+  .no { flex: 0 0 auto; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--fg); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; }
+  .qtag { font-size: 13px; color: var(--muted); }
+  .body { min-width: 0; overflow-x: auto; }
+  .body p { margin: 0 0 6px; }
+  .disp { text-align: center; margin: 6px 0; overflow-x: auto; }
+  .fig { display: flex; justify-content: center; color: var(--fg); margin: 4px 0; }
+  .fig svg { max-width: 100%; height: auto; }
+  .rule { border: 1px solid var(--muted); border-radius: 8px; padding: 8px 12px; font-size: 15px; margin: 6px 0; }
+  .rule .rl { font-size: 12px; font-weight: 800; color: var(--muted); letter-spacing: 0.3em; margin-bottom: 2px; }
+  .rule p { margin: 2px 0; }
+  .ch { font-size: 15px; }
+  details { border-top: 1px dashed var(--line); padding-top: 8px; }
+  summary { cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 999px; padding: 4px 14px; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] summary { color: var(--muted); border-color: var(--line); }
+  summary:focus-visible, .back:focus-visible, .more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ans { margin-top: 8px; font-size: 20px; font-weight: 800; color: var(--accent); }
+  .lv { display: inline-block; margin-left: 4px; font-size: 12px; font-weight: 800; color: var(--fg); border: 1.2px solid var(--fg); border-radius: 4px; padding: 0 6px; letter-spacing: 0; }
+  .formula { border: 1.5px solid var(--accent); border-radius: 12px; padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .formula .fl { font-size: 13px; font-weight: 800; color: var(--accent); }
+  .formula .fx { font-size: 16px; overflow-x: auto; }
+  footer { font-size: 13px; color: var(--muted); text-align: center; }
+  .katex { font-size: 1.05em; }
+  .more { align-self: flex-end; font-size: 14px; font-weight: 700; color: var(--accent); text-decoration: none; border: 1.5px solid var(--accent); border-radius: 999px; padding: 3px 12px; }
+</style></head><body><div class="wrap"><header><div class="eyebrow">미적분Ⅰ · 연습문제 정답</div><h1><span>증가·감소·극값과 최대·최소</span></h1><div class="sub">먼저 끝까지 풀어 본 뒤에 정답을 확인하세요.</div></header>
+<nav class="jump"><a href="#setA">기본 1~6</a><a href="#setB">심화 7~12</a></nav>
+<section id="setA"><h2>기본</h2><div class="q"><div class="qhead"><div class="no">1</div><div class="qtag">구간별 증가·감소와 계수</div></div><div class="ans">② \(-\dfrac{9}{2}\)</div><a class="more" href="type1.html">1번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">2</div><div class="qtag">도함수의 그래프와 극값</div></div><div class="ans">④ \(20\)</div><a class="more" href="type2.html">2번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">3</div><div class="qtag">도함수의 그래프와 사차함수</div></div><div class="ans">⑤ ㄱ, ㄴ, ㄷ</div><a class="more" href="type3.html">3번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">4</div><div class="qtag">극값을 가질 조건</div></div><div class="ans">\(10\)</div><a class="more" href="type4.html">4번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">5</div><div class="qtag">닫힌구간에서의 최대·최소</div></div><div class="ans">\(6\)</div><a class="more" href="type5.html">5번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">6</div><div class="qtag">최대·최소의 활용</div></div><div class="ans">① \(16\)</div><a class="more" href="type6.html">6번 유형 더 풀기 →</a></div></section><section id="setB"><h2>심화</h2><div class="q"><div class="qhead"><div class="no">7</div><div class="qtag">구간별 증가·감소와 계수</div></div><div class="ans">③ \(-10\)</div><a class="more" href="type7.html">7번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">8</div><div class="qtag">도함수의 그래프와 극값</div></div><div class="ans">② \(-4\)</div><a class="more" href="type8.html">8번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">9</div><div class="qtag">도함수의 그래프와 사차함수</div></div><div class="ans">④ ㄱ, ㄷ</div><a class="more" href="type9.html">9번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">10</div><div class="qtag">극값을 가질 조건</div></div><div class="ans">\(4\)</div><a class="more" href="type10.html">10번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">11</div><div class="qtag">닫힌구간에서의 최대·최소</div></div><div class="ans">\(2\)</div><a class="more" href="type11.html">11번 유형 더 풀기 →</a></div><div class="q"><div class="qhead"><div class="no">12</div><div class="qtag">최대·최소의 활용</div></div><div class="ans">⑤ \(24\sqrt{3}\)</div><a class="more" href="type12.html">12번 유형 더 풀기 →</a></div></section><footer>이것만은 반드시 · 증가·감소·극값과 최대·최소</footer></div></body></html>

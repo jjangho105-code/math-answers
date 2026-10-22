@@ -1,0 +1,57 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>증가·감소·극값과 최대·최소 · 12번 유형</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script><style>  :root { --bg:#fbfaf9; --surface:#ffffff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+    --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 16px; line-height: 1.75; word-break: keep-all; }
+  .wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 48px; display: flex; flex-direction: column; gap: 18px; }
+  .back { font-size: 14px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+  header { display: flex; flex-direction: column; gap: 4px; border-bottom: 2px solid var(--fg); padding-bottom: 14px; }
+  .eyebrow { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; }
+  h1 { margin: 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; text-wrap: balance; }
+  h1 span { color: var(--accent); }
+  h2 { margin: 6px 0 0; font-size: 17px; font-weight: 800; }
+  section { display:flex; flex-direction:column; gap:12px; scroll-margin-top:12px; }
+  .jump { display:flex; gap:10px; }
+  .jump a { flex:1; text-align:center; font-weight:800; font-size:15px; color:var(--fg); text-decoration:none; border:1.5px solid var(--fg); border-radius:10px; padding:8px 0; }
+  .sub { font-size: 14px; color: var(--muted); }
+  .q { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .qhead { display: flex; align-items: center; gap: 10px; }
+  .no { flex: 0 0 auto; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--fg); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; }
+  .qtag { font-size: 13px; color: var(--muted); }
+  .body { min-width: 0; overflow-x: auto; }
+  .body p { margin: 0 0 6px; }
+  .disp { text-align: center; margin: 6px 0; overflow-x: auto; }
+  .fig { display: flex; justify-content: center; color: var(--fg); margin: 4px 0; }
+  .fig svg { max-width: 100%; height: auto; }
+  .rule { border: 1px solid var(--muted); border-radius: 8px; padding: 8px 12px; font-size: 15px; margin: 6px 0; }
+  .rule .rl { font-size: 12px; font-weight: 800; color: var(--muted); letter-spacing: 0.3em; margin-bottom: 2px; }
+  .rule p { margin: 2px 0; }
+  .ch { font-size: 15px; }
+  details { border-top: 1px dashed var(--line); padding-top: 8px; }
+  summary { cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 999px; padding: 4px 14px; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] summary { color: var(--muted); border-color: var(--line); }
+  summary:focus-visible, .back:focus-visible, .more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ans { margin-top: 8px; font-size: 20px; font-weight: 800; color: var(--accent); }
+  .lv { display: inline-block; margin-left: 4px; font-size: 12px; font-weight: 800; color: var(--fg); border: 1.2px solid var(--fg); border-radius: 4px; padding: 0 6px; letter-spacing: 0; }
+  .formula { border: 1.5px solid var(--accent); border-radius: 12px; padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .formula .fl { font-size: 13px; font-weight: 800; color: var(--accent); }
+  .formula .fx { font-size: 16px; overflow-x: auto; }
+  footer { font-size: 13px; color: var(--muted); text-align: center; }
+  .katex { font-size: 1.05em; }
+  .more { align-self: flex-end; font-size: 14px; font-weight: 700; color: var(--accent); text-decoration: none; border: 1.5px solid var(--accent); border-radius: 999px; padding: 3px 12px; }
+</style></head><body><div class="wrap"><a class="back" href="./#setB">← 정답 페이지로 돌아가기</a>
+<header><div class="eyebrow">증가·감소·극값과 최대·최소 · 12번 유형 더 풀기 <span class="lv">심화</span></div><h1>최대·최소의 활용</h1><div class="sub">비슷한 문제 4개입니다. 끝까지 풀고 나서 정답 보기를 눌러 확인하세요.</div></header>
+<div class="q"><div class="qhead"><div class="no">1</div><div class="qtag">심화</div></div><div class="body"><p>밑면이 정사각형인 직육면체 \(\mathrm{ABCD}\text{-}\mathrm{EFGH}\)의 대각선 \(\mathrm{BH}\)의 길이가 \(3\sqrt{3}\)일 때, 이 직육면체의 부피의 최댓값을 구하시오.</p><div class="fig"><svg viewBox="0 0 110 118" width="150" xmlns="http://www.w3.org/2000/svg"><line x1="14.0" y1="30.0" x2="66.0" y2="30.0" stroke="currentColor" stroke-width="1" /><line x1="66.0" y1="30.0" x2="92.0" y2="12.0" stroke="currentColor" stroke-width="1" /><line x1="92.0" y1="12.0" x2="40.0" y2="12.0" stroke="currentColor" stroke-width="1" /><line x1="40.0" y1="12.0" x2="14.0" y2="30.0" stroke="currentColor" stroke-width="1" /><line x1="14.0" y1="30.0" x2="14.0" y2="100.0" stroke="currentColor" stroke-width="1" /><line x1="66.0" y1="30.0" x2="66.0" y2="100.0" stroke="currentColor" stroke-width="1" /><line x1="92.0" y1="12.0" x2="92.0" y2="82.0" stroke="currentColor" stroke-width="1" /><line x1="14.0" y1="100.0" x2="66.0" y2="100.0" stroke="currentColor" stroke-width="1" /><line x1="66.0" y1="100.0" x2="92.0" y2="82.0" stroke="currentColor" stroke-width="1" /><line x1="40.0" y1="12.0" x2="40.0" y2="82.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/><line x1="40.0" y1="82.0" x2="14.0" y2="100.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/><line x1="40.0" y1="82.0" x2="92.0" y2="82.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/><line x1="14.0" y1="30.0" x2="92.0" y2="82.0" stroke="currentColor" stroke-width="1.6" stroke-dasharray="4 2"/><text x="36.0" y="8.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">A</text><text x="3.0" y="34.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">B</text><text x="69.0" y="40.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">C</text><text x="95.0" y="10.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">D</text><text x="28.0" y="84.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">E</text><text x="4.0" y="108.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">F</text><text x="68.0" y="110.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">G</text><text x="95.0" y="86.0" font-family="Times New Roman, Liberation Serif, serif" font-size="11" fill="currentColor">H</text></svg></div></div>
+<details><summary>정답 보기</summary><div class="ans">\(27\)</div></details></div><div class="q"><div class="qhead"><div class="no">2</div><div class="qtag">심화</div></div><div class="body"><p>반지름의 길이가 \(3\)인 구에 내접하는 원기둥의 부피의 최댓값을 구하시오.</p></div>
+<details><summary>정답 보기</summary><div class="ans">\(12\sqrt{3}\pi\)</div></details></div><div class="q"><div class="qhead"><div class="no">3</div><div class="qtag">심화</div></div><div class="body"><p>곡선 \(y=-x^2+4x~(0&lt;x&lt;4)\) 위의 점 \(\mathrm{P}\)에서 \(x\)축에 내린 수선의 발을 \(\mathrm{H}\)라 할 때, 삼각형 \(\mathrm{OPH}\)의 넓이의 최댓값을 구하시오. (단, \(\mathrm{O}\)는 원점이다.)</p></div>
+<details><summary>정답 보기</summary><div class="ans">\(\dfrac{128}{27}\)</div></details></div><div class="q"><div class="qhead"><div class="no">4</div><div class="qtag">심화</div></div><div class="body"><p>밑면의 반지름의 길이가 \(3\), 높이가 \(9\)인 원뿔에 내접하는 원기둥의 부피의 최댓값을 구하시오.</p></div>
+<details><summary>정답 보기</summary><div class="ans">\(12\pi\)</div></details></div><div class="formula"><div class="fl">이 유형의 핵심 공식</div><div class="fx">조건으로 변수 하나를 없애 부피(넓이)를 한 변수의 함수로 나타낸 뒤, 도함수가 \(0\)이 되는 값에서 최대</div></div><footer>이것만은 반드시 · 증가·감소·극값과 최대·최소</footer></div></body></html>
