@@ -1,0 +1,53 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><title>도함수의 활용 · 주관식 정답</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script><style>:root { --bg:#fbfaf9; --surface:#fff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+  --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme:dark; } }
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body { background:var(--bg); color:var(--fg); font-family:var(--font-ui); font-size:16px; line-height:1.75; word-break:keep-all; }
+.wrap { max-width:640px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:20px 48px; display:flex; flex-direction:column; gap:16px; }
+.back { font-size:14px; color:var(--muted); text-decoration:none; }
+header { display:flex; flex-direction:column; gap:4px; border-bottom:2px solid var(--fg); padding-bottom:14px; }
+.eyebrow { font-size:13px; font-weight:700; color:var(--muted); letter-spacing:0.04em; }
+h1 { margin:0; font-size:24px; font-weight:900; letter-spacing:-0.02em; }
+h1 span { color:var(--accent); }
+.sub { font-size:14px; color:var(--muted); }
+.q { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; min-width:0; scroll-margin-top:12px; }
+.qhead { display:flex; align-items:center; gap:10px; }
+.no { flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--fg); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; }
+.qtag { font-size:13px; color:var(--muted); }
+.mainans { display:flex; align-items:baseline; gap:10px; }
+.al { font-size:13px; font-weight:800; color:var(--muted); border:1.2px solid var(--line); border-radius:4px; padding:0 6px; }
+.av { font-size:22px; font-weight:800; color:var(--accent); }
+details.more6 > summary { cursor:pointer; list-style:none; display:inline-flex; align-items:center; font-size:15px; font-weight:800; color:var(--fg); border:1.5px solid var(--fg); border-radius:999px; padding:5px 16px; }
+details.more6 > summary::after { content:" ▾"; margin-left:4px; }
+details.more6[open] > summary::after { content:" ▴"; }
+details summary::-webkit-details-marker { display:none; }
+.subs { display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+.sq { border-top:1px dashed var(--line); padding-top:10px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+.sqh { display:flex; }
+.lvb { font-size:12px; font-weight:800; border:1.2px solid var(--fg); border-radius:4px; padding:0 7px; letter-spacing:0.02em; }
+.lv1 .lvb { border-color:var(--accent); color:var(--accent); }
+.lv2 .lvb { border-width:2px; border-color:var(--accent); color:var(--accent); }
+.body { min-width:0; overflow-x:auto; }
+.body p { margin:0 0 4px; }
+.fig { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.fig svg { max-width:100%; height:auto; }
+.rule { position:relative; border:1px solid var(--muted); border-radius:8px; padding:10px 12px 6px; font-size:15px; margin:8px 0 4px; }
+.rule .rl { display:block; text-align:center; font-size:12px; margin-bottom:2px; color:var(--muted); }
+.rule p { margin:0 0 4px; }
+details.ans6 > summary { cursor:pointer; display:inline-flex; font-size:14px; font-weight:700; color:var(--accent); border:1.5px solid var(--accent); border-radius:999px; padding:3px 14px; list-style:none; }
+details.ans6[open] > summary { color:var(--muted); border-color:var(--line); }
+summary:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.ans { margin-top:6px; font-size:19px; font-weight:800; color:var(--accent); }
+.katex { font-size:1.05em; }
+.katex-display { overflow-x:auto; overflow-y:hidden; margin:6px 0; }
+.pn { display:flex; justify-content:space-between; font-size:15px; font-weight:700; }
+.pn a, .pgcard { color:var(--accent); text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+.pgcard { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; }
+.pgcard b { color:var(--fg); }
+.pgcard span { font-size:13px; color:var(--muted); }
+footer { font-size:13px; color:var(--muted); text-align:center; }
+
+.nw { white-space:nowrap; }
+</style></head><body><div class="wrap"><header><div class="eyebrow">호호수학 · 정답</div><h1><span>도함수의 활용</span> 주관식</h1><div class="sub">쪽을 누르면 그 쪽의 정답과 문항별 비슷한 문제 6개가 나옵니다.</div></header><div class="grid"><a class="pgcard" href="p1.html"><b>1쪽</b><span>1~4번</span></a><a class="pgcard" href="p2.html"><b>2쪽</b><span>5~8번</span></a><a class="pgcard" href="p3.html"><b>3쪽</b><span>9~12번</span></a><a class="pgcard" href="p4.html"><b>4쪽</b><span>13~16번</span></a><a class="pgcard" href="p5.html"><b>5쪽</b><span>17~20번</span></a><a class="pgcard" href="p6.html"><b>6쪽</b><span>21~24번</span></a><a class="pgcard" href="p7.html"><b>7쪽</b><span>25~28번</span></a><a class="pgcard" href="p8.html"><b>8쪽</b><span>29~32번</span></a><a class="pgcard" href="p9.html"><b>9쪽</b><span>33~36번</span></a><a class="pgcard" href="p10.html"><b>10쪽</b><span>37~40번</span></a><a class="pgcard" href="p11.html"><b>11쪽</b><span>41~44번</span></a><a class="pgcard" href="p12.html"><b>12쪽</b><span>45~48번</span></a><a class="pgcard" href="p13.html"><b>13쪽</b><span>49~52번</span></a><a class="pgcard" href="p14.html"><b>14쪽</b><span>53~56번</span></a><a class="pgcard" href="p15.html"><b>15쪽</b><span>57~60번</span></a><a class="pgcard" href="p16.html"><b>16쪽</b><span>61~64번</span></a><a class="pgcard" href="p17.html"><b>17쪽</b><span>65~68번</span></a><a class="pgcard" href="p18.html"><b>18쪽</b><span>69~72번</span></a><a class="pgcard" href="p19.html"><b>19쪽</b><span>73~76번</span></a><a class="pgcard" href="p20.html"><b>20쪽</b><span>77~80번</span></a><a class="pgcard" href="p21.html"><b>21쪽</b><span>81~84번</span></a><a class="pgcard" href="p22.html"><b>22쪽</b><span>85~88번</span></a><a class="pgcard" href="p23.html"><b>23쪽</b><span>89~92번</span></a><a class="pgcard" href="p24.html"><b>24쪽</b><span>93~96번</span></a><a class="pgcard" href="p25.html"><b>25쪽</b><span>97~100번</span></a><a class="pgcard" href="p26.html"><b>26쪽</b><span>101번</span></a></div><footer>호호수학</footer></div></body></html>
