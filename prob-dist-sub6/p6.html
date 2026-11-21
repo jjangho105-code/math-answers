@@ -1,0 +1,181 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><title>확률분포 주관식 · 21~24번 정답</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script><style>:root { --bg:#fbfaf9; --surface:#fff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+  --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme:dark; } }
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body { background:var(--bg); color:var(--fg); font-family:var(--font-ui); font-size:16px; line-height:1.75; word-break:keep-all; }
+.wrap { max-width:640px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:20px 48px; display:flex; flex-direction:column; gap:16px; }
+.back { font-size:14px; color:var(--muted); text-decoration:none; }
+header { display:flex; flex-direction:column; gap:4px; border-bottom:2px solid var(--fg); padding-bottom:14px; }
+.eyebrow { font-size:13px; font-weight:700; color:var(--muted); letter-spacing:0.04em; }
+h1 { margin:0; font-size:24px; font-weight:900; letter-spacing:-0.02em; }
+h1 span { color:var(--accent); }
+.sub { font-size:14px; color:var(--muted); }
+.q { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; min-width:0; scroll-margin-top:12px; }
+.qhead { display:flex; align-items:center; gap:10px; }
+.no { flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--fg); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; }
+.qtag { font-size:13px; color:var(--muted); }
+.mainans { display:flex; align-items:baseline; gap:10px; }
+.al { font-size:13px; font-weight:800; color:var(--muted); border:1.2px solid var(--line); border-radius:4px; padding:0 6px; }
+.av { font-size:22px; font-weight:800; color:var(--accent); }
+details.more6 > summary { cursor:pointer; list-style:none; display:inline-flex; align-items:center; font-size:15px; font-weight:800; color:var(--fg); border:1.5px solid var(--fg); border-radius:999px; padding:5px 16px; }
+details.more6 > summary::after { content:" ▾"; margin-left:4px; }
+details.more6[open] > summary::after { content:" ▴"; }
+details summary::-webkit-details-marker { display:none; }
+.subs { display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+.sq { border-top:1px dashed var(--line); padding-top:10px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+.sqh { display:flex; }
+.lvb { font-size:12px; font-weight:800; border:1.2px solid var(--fg); border-radius:4px; padding:0 7px; letter-spacing:0.02em; }
+.lv1 .lvb { border-color:var(--accent); color:var(--accent); }
+.lv2 .lvb { border-width:2px; border-color:var(--accent); color:var(--accent); }
+.body { min-width:0; overflow-x:auto; }
+.body p { margin:0 0 4px; }
+.fig { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.fig svg { max-width:100%; height:auto; }
+.rule { position:relative; border:1px solid var(--muted); border-radius:8px; padding:10px 12px 6px; font-size:15px; margin:8px 0 4px; }
+.rule .rl { display:block; text-align:center; font-size:12px; margin-bottom:2px; color:var(--muted); }
+.rule p { margin:0 0 4px; }
+details.ans6 > summary { cursor:pointer; display:inline-flex; font-size:14px; font-weight:700; color:var(--accent); border:1.5px solid var(--accent); border-radius:999px; padding:3px 14px; list-style:none; }
+details.ans6[open] > summary { color:var(--muted); border-color:var(--line); }
+summary:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.ans { margin-top:6px; font-size:19px; font-weight:800; color:var(--accent); }
+.katex { font-size:1.05em; }
+.katex-display { overflow-x:auto; overflow-y:hidden; margin:6px 0; }
+.pn { display:flex; justify-content:space-between; font-size:15px; font-weight:700; }
+.pn a, .pgcard { color:var(--accent); text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+.pgcard { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; }
+.pgcard b { color:var(--fg); }
+.pgcard span { font-size:13px; color:var(--muted); }
+footer { font-size:13px; color:var(--muted); text-align:center; }
+
+.nw { white-space:nowrap; }
+
+.src { font-size:13px; color:var(--muted); margin-left:auto; }
+.pgh { font-size:13px; font-weight:800; color:var(--muted); margin-top:4px; }
+.alist { background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+.arow { display:flex; align-items:center; gap:10px; padding:9px 12px; color:var(--fg); text-decoration:none; border-top:1px solid var(--line); }
+.arow:first-child { border-top:0; }
+.arow .no { width:28px; height:28px; font-size:13px; }
+.av2 { font-size:18px; font-weight:800; color:var(--accent); line-height:1.5; white-space:nowrap; }
+.src2 { font-size:12.5px; color:var(--muted); line-height:1.4; border:1px solid var(--line); border-radius:4px; padding:0 6px; white-space:nowrap; }
+.go { margin-left:auto; grid-area:go; font-size:13px; font-weight:700; color:var(--muted); white-space:nowrap; }
+
+.bogi { position:relative; border:1px solid var(--muted); border-radius:8px; padding:14px 12px 8px; margin:12px 0 4px; font-size:15px; }
+.bogi .bl { position:absolute; top:-10px; left:10px; background:var(--surface); padding:0 6px; font-size:12.5px; font-weight:800; color:var(--muted); }
+.bogi > div { margin:2px 0; }
+.bfr { display:flex; flex-wrap:wrap; gap:6px 10px; justify-content:space-around; }
+.bf { display:flex; align-items:flex-start; gap:2px; color:var(--fg); }
+.bf svg { width:118px; height:auto; }
+.cond { border:1px solid var(--muted); border-radius:8px; padding:8px 12px; margin:8px 0 6px; font-size:15px; }
+.cond > div { margin:2px 0; }
+.cbox { border:1px solid var(--muted); border-radius:6px; padding:6px 10px; margin:8px 0; text-align:center; }
+.av2 .katex, .av .katex { font-size:1em; }
+
+.tbw { margin:8px 0; overflow-x:auto; }
+.unit { text-align:right; font-size:12.5px; color:var(--muted); }
+.tb { border-collapse:collapse; margin:0 auto; font-size:14.5px; min-width:70%; }
+.tb th, .tb td { border-top:1px solid var(--muted); border-bottom:1px solid var(--muted); padding:3px 12px; text-align:center; font-weight:500; }
+.tb tr:first-child th { border-top:1.5px solid var(--fg); font-weight:700; }
+.tb tr:last-child th, .tb tr:last-child td { border-bottom:1.5px solid var(--fg); }
+.bogi.brow { display:flex; flex-wrap:wrap; gap:4px 22px; }
+.ans .katex, .av .katex { font-size:1em; }
+.av2.long { white-space:normal; }
+
+:root { --bg:#fbfaf9; --surface:#fff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+  --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme:dark; } }
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body { background:var(--bg); color:var(--fg); font-family:var(--font-ui); font-size:16px; line-height:1.75; word-break:keep-all; }
+.wrap { max-width:640px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:20px 48px; display:flex; flex-direction:column; gap:16px; }
+.back { font-size:14px; color:var(--muted); text-decoration:none; }
+header { display:flex; flex-direction:column; gap:4px; border-bottom:2px solid var(--fg); padding-bottom:14px; }
+.eyebrow { font-size:13px; font-weight:700; color:var(--muted); letter-spacing:0.04em; }
+h1 { margin:0; font-size:24px; font-weight:900; letter-spacing:-0.02em; }
+h1 span { color:var(--accent); }
+.sub { font-size:14px; color:var(--muted); }
+.q { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; min-width:0; scroll-margin-top:12px; }
+.qhead { display:flex; align-items:center; gap:10px; }
+.no { flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--fg); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; }
+.qtag { font-size:13px; color:var(--muted); }
+.mainans { display:flex; align-items:baseline; gap:10px; }
+.al { font-size:13px; font-weight:800; color:var(--muted); border:1.2px solid var(--line); border-radius:4px; padding:0 6px; }
+.av { font-size:22px; font-weight:800; color:var(--accent); }
+details.more6 > summary { cursor:pointer; list-style:none; display:inline-flex; align-items:center; font-size:15px; font-weight:800; color:var(--fg); border:1.5px solid var(--fg); border-radius:999px; padding:5px 16px; }
+details.more6 > summary::after { content:" ▾"; margin-left:4px; }
+details.more6[open] > summary::after { content:" ▴"; }
+details summary::-webkit-details-marker { display:none; }
+.subs { display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+.sq { border-top:1px dashed var(--line); padding-top:10px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+.sqh { display:flex; }
+.lvb { font-size:12px; font-weight:800; border:1.2px solid var(--fg); border-radius:4px; padding:0 7px; letter-spacing:0.02em; }
+.lv1 .lvb { border-color:var(--accent); color:var(--accent); }
+.lv2 .lvb { border-width:2px; border-color:var(--accent); color:var(--accent); }
+.body { min-width:0; overflow-x:auto; }
+.body p { margin:0 0 4px; }
+.fig { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.fig svg { max-width:100%; height:auto; }
+.rule { position:relative; border:1px solid var(--muted); border-radius:8px; padding:10px 12px 6px; font-size:15px; margin:8px 0 4px; }
+.rule .rl { display:block; text-align:center; font-size:12px; margin-bottom:2px; color:var(--muted); }
+.rule p { margin:0 0 4px; }
+details.ans6 > summary { cursor:pointer; display:inline-flex; font-size:14px; font-weight:700; color:var(--accent); border:1.5px solid var(--accent); border-radius:999px; padding:3px 14px; list-style:none; }
+details.ans6[open] > summary { color:var(--muted); border-color:var(--line); }
+summary:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.ans { margin-top:6px; font-size:19px; font-weight:800; color:var(--accent); }
+.katex { font-size:1.05em; }
+.katex-display { overflow-x:auto; overflow-y:hidden; margin:6px 0; }
+.pn { display:flex; justify-content:space-between; font-size:15px; font-weight:700; }
+.pn a, .pgcard { color:var(--accent); text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+.pgcard { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; }
+.pgcard b { color:var(--fg); }
+.pgcard span { font-size:13px; color:var(--muted); }
+footer { font-size:13px; color:var(--muted); text-align:center; }
+
+.nw { white-space:nowrap; }
+
+.src { font-size:13px; color:var(--muted); margin-left:auto; }
+.pgh { font-size:13px; font-weight:800; color:var(--muted); margin-top:4px; }
+.alist { background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+.arow { display:flex; align-items:center; gap:10px; padding:9px 12px; color:var(--fg); text-decoration:none; border-top:1px solid var(--line); }
+.arow:first-child { border-top:0; }
+.arow .no { width:28px; height:28px; font-size:13px; }
+.av2 { font-size:18px; font-weight:800; color:var(--accent); line-height:1.5; white-space:nowrap; }
+.src2 { font-size:12.5px; color:var(--muted); line-height:1.4; border:1px solid var(--line); border-radius:4px; padding:0 6px; white-space:nowrap; }
+.go { margin-left:auto; grid-area:go; font-size:13px; font-weight:700; color:var(--muted); white-space:nowrap; }
+
+.bogi { position:relative; border:1px solid var(--muted); border-radius:8px; padding:14px 12px 8px; margin:12px 0 4px; font-size:15px; }
+.bogi .bl { position:absolute; top:-10px; left:10px; background:var(--surface); padding:0 6px; font-size:12.5px; font-weight:800; color:var(--muted); }
+.bogi > div { margin:2px 0; }
+.bfr { display:flex; flex-wrap:wrap; gap:6px 10px; justify-content:space-around; }
+.bf { display:flex; align-items:flex-start; gap:2px; color:var(--fg); }
+.bf svg { width:118px; height:auto; }
+.cond { border:1px solid var(--muted); border-radius:8px; padding:8px 12px; margin:8px 0 6px; font-size:15px; }
+.cond > div { margin:2px 0; }
+.cbox { border:1px solid var(--muted); border-radius:6px; padding:6px 10px; margin:8px 0; text-align:center; }
+.av2 .katex, .av .katex { font-size:1em; }
+
+.tbw { margin:8px 0; overflow-x:auto; }
+.unit { text-align:right; font-size:12.5px; color:var(--muted); }
+.tb { border-collapse:collapse; margin:0 auto; font-size:14.5px; min-width:70%; }
+.tb th, .tb td { border-top:1px solid var(--muted); border-bottom:1px solid var(--muted); padding:3px 12px; text-align:center; font-weight:500; }
+.tb tr:first-child th { border-top:1.5px solid var(--fg); font-weight:700; }
+.tb tr:last-child th, .tb tr:last-child td { border-bottom:1.5px solid var(--fg); }
+.bogi.brow { display:flex; flex-wrap:wrap; gap:4px 22px; }
+.ans .katex, .av .katex { font-size:1em; }
+.av2.long { white-space:normal; }
+
+.body { line-height:2.15; text-align:left; }
+.body .katex-display { line-height:1.4; }
+.figw { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.figw svg { max-width:100%; height:auto; }
+table.dist, table.ztab { border-collapse:collapse; margin:8px auto; font-size:14px; line-height:1.5; }
+table.dist th, table.dist td, table.ztab th, table.ztab td { border:1px solid var(--muted); padding:3px 9px; text-align:center; font-weight:500; }
+.bogi p, .cond p { margin:2px 0; }
+.bogi .g2 { display:grid; grid-template-columns:1fr 1fr; gap:2px 12px; }
+.body p.sub { margin:2px 0; font-size:inherit; color:inherit; }
+.qsrc { font-size:13px; color:var(--muted); margin-left:auto; text-align:right; }
+.nw { white-space:nowrap; }
+.dcnd { text-align:center; margin:-4px 0 4px; }
+</style></head><body><div class="wrap"><a class="back" href="index.html">← 전체 정답 (한 번에 채점)</a><header><div class="eyebrow">호호수학 · 문제지 6쪽</div><h1><span>확률분포</span> 21~24번</h1><div class="sub">정답을 확인하고, 비슷한 문제 6개로 한 번 더 연습하세요.</div></header><section class="q" id="q21"><div class="qhead"><span class="no">21</span><span class="al">정답</span><span class="av">ㄴ</span><span class="qsrc">출처 · 교재 64쪽 유형 223번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">확률변수 <span class="nw">$X$가</span> 정규분포 <span class="nw">$\mathrm{N}(m,\,\sigma^2)$을</span> 따를 때, 옳은 것만을 〈보기〉에서 있는 대로 고르시오.<div class="bogi"><span class="bl">보기</span><p>ㄱ. $\mathrm{P}(X\le m)=0.5$</p><p>ㄴ. $\mathrm{P}(X=m)=0$</p><p>ㄷ. $\mathrm{P}(m-\sigma\le X\le m)&gt;\mathrm{P}(m\le X\le m+2\sigma)$</p></div></div><details class="ans6"><summary>정답 보기</summary><div class="ans">ㄱ, ㄴ</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">확률변수 <span class="nw">$X$가</span> 정규분포 <span class="nw">$\mathrm{N}(m,\,\sigma^2)$을</span> 따를 때, 옳은 것만을 〈보기〉에서 있는 대로 고르시오.<div class="bogi"><span class="bl">보기</span><p>ㄱ. 양수 <span class="nw">$a$에</span> 대하여 $\mathrm{P}(X\ge m+a)=\mathrm{P}(X\le m-a)$</p><p>ㄴ. <span class="nw">$\sigma$의</span> 값이 커지면 $\mathrm{P}(m-\sigma\le X\le m+\sigma)$의 값도 커진다.</p><p>ㄷ. <span class="nw">$X$의</span> 확률밀도함수의 그래프는 직선 <span class="nw">$x=m$에</span> 대하여 대칭이다.</p></div></div><details class="ans6"><summary>정답 보기</summary><div class="ans">ㄱ, ㄷ</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">확률변수 <span class="nw">$X$가</span> 정규분포 <span class="nw">$\mathrm{N}(10,\,2^2)$을</span> 따르고 <span class="nw">$Z$가</span> 표준정규분포를 따를 때, 옳은 것만을 〈보기〉에서 있는 대로 고르시오.<div class="bogi"><span class="bl">보기</span><p>ㄱ. $\mathrm{P}(X\le 8)=\mathrm{P}(X\ge 12)$</p><p>ㄴ. $\mathrm{P}(8\le X\le 10)=\mathrm{P}(10\le X\le 12)$</p><p>ㄷ. $\mathrm{P}(X\ge 14)=\mathrm{P}(Z\ge 4)$</p></div></div><details class="ans6"><summary>정답 보기</summary><div class="ans">ㄱ, ㄴ</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">두 확률변수 <span class="nw">$X,\,Y$가</span> 각각 정규분포 $\mathrm{N}(m,\,\sigma^2)$, <span class="nw">$\mathrm{N}(m,\,4\sigma^2)$을</span> 따를 때, 옳은 것만을 〈보기〉에서 있는 대로 고르시오.<div class="bogi"><span class="bl">보기</span><p>ㄱ. $\mathrm{P}(X\le m)=\mathrm{P}(Y\le m)$</p><p>ㄴ. $\mathrm{P}(m\le X\le m+\sigma)=\mathrm{P}(m\le Y\le m+2\sigma)$</p><p>ㄷ. $\mathrm{P}(X\ge m+\sigma)&gt;\mathrm{P}(Y\ge m+\sigma)$</p></div></div><details class="ans6"><summary>정답 보기</summary><div class="ans">ㄱ, ㄴ</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">확률변수 <span class="nw">$X$가</span> 정규분포 <span class="nw">$\mathrm{N}(m,\,\sigma^2)$을</span> 따르고 <span class="nw">$X$의</span> 확률밀도함수를 <span class="nw">$f(x)$라</span> 할 때, 옳은 것만을 〈보기〉에서 있는 대로 고르시오.<div class="bogi"><span class="bl">보기</span><p>ㄱ. $f(m+1)=f(m-1)$</p><p>ㄴ. $f(m)&lt;f(m+\sigma)$</p><p>ㄷ. <span class="nw">$a&lt;b&lt;m$이면</span> <span class="nw">$f(a)&lt;f(b)$이다</span>.</p></div></div><details class="ans6"><summary>정답 보기</summary><div class="ans">ㄱ, ㄷ</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">확률변수 <span class="nw">$X$가</span> 정규분포 <span class="nw">$\mathrm{N}(4,\,\sigma^2)$을</span> 따르고 $\mathrm{P}(X\le 2)=\mathrm{P}(X\ge k)$일 때, 옳은 것만을 〈보기〉에서 있는 대로 고르시오. (단, <span class="nw">$k$는</span> 상수이다.)<div class="bogi"><span class="bl">보기</span><p>ㄱ. $k=6$</p><p>ㄴ. $\mathrm{P}(2\le X\le k)=1-2\mathrm{P}(X\le 2)$</p><p>ㄷ. <span class="nw">$\sigma$의</span> 값이 커지면 <span class="nw">$\mathrm{P}(2\le X\le 6)$의</span> 값은 작아진다.</p></div></div><details class="ans6"><summary>정답 보기</summary><div class="ans">ㄱ, ㄴ, ㄷ</div></details></div></div></details></section><section class="q" id="q22"><div class="qhead"><span class="no">22</span><span class="al">정답</span><span class="av">$\dfrac{11}{30}$</span><span class="qsrc">출처 · 교재 59쪽 유형 197번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">확률변수 <span class="nw">$X$의</span> 확률질량함수가 $$\mathrm{P}(X=x)=k(|x|+1)$$<div class="dcnd">$(x=-2,\,-1,\,0,\,1,\,2)$</div> 일 때, <span class="nw">$\mathrm{P}(X^2\le 1)$을</span> 구하시오. (단, <span class="nw">$k$는</span> 상수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$\dfrac{5}{11}$</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">확률변수 <span class="nw">$X$의</span> 확률질량함수가 $$\mathrm{P}(X=x)=kx^2+\dfrac{1}{8}$$<div class="dcnd">$(x=-1,\,0,\,1,\,2)$</div> 일 때, <span class="nw">$\mathrm{P}(X\ge 1)$을</span> 구하시오. (단, <span class="nw">$k$는</span> 상수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$\dfrac{2}{3}$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">확률변수 <span class="nw">$X$의</span> 확률질량함수가 $$\mathrm{P}(X=x)=k|x-1|+\dfrac{1}{12}$$<div class="dcnd">$(-1\le x\le 3,\ x\text{는 정수})$</div> 일 때, <span class="nw">$\mathrm{P}(X^2-2X=0)$을</span> 구하시오. (단, <span class="nw">$k$는</span> 상수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$\dfrac{13}{36}$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">확률변수 <span class="nw">$X$의</span> 확률질량함수가 $$\mathrm{P}(X=x)=a|x|+b\ (x=-2,\,-1,\,0,\,1,\,2)$$ 이다. <span class="nw">$\mathrm{E}(X^2)=\dfrac{12}{5}$일</span> 때, <span class="nw">$\mathrm{P}(X=0)$의</span> 값을 구하시오. (단, <span class="nw">$a,\,b$는</span> 상수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$\dfrac{3}{25}$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">확률변수 <span class="nw">$X$의</span> 확률질량함수가 $$\mathrm{P}(X=x)=k|x|+c$$<div class="dcnd">$(-3\le x\le 3,\ x\text{는 정수})$</div> 이고 <span class="nw">$\mathrm{P}(X=0)=\dfrac{1}{13}$일</span> 때, <span class="nw">$\mathrm{V}(X)$의</span> 값을 구하시오. (단, <span class="nw">$k,\,c$는</span> 상수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$\dfrac{64}{13}$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">확률변수 <span class="nw">$X$의</span> 확률질량함수가 $$\mathrm{P}(X=x)=k|x|+\dfrac{1}{10}$$<div class="dcnd">$(-2\le x\le 2,\ x\text{는 정수})$</div> 이다. 확률변수 <span class="nw">$Y=X^2$에</span> 대하여 <span class="nw">$\mathrm{E}(Y)+\mathrm{V}(Y)$의</span> 값을 구하시오. (단, <span class="nw">$k$는</span> 상수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$\dfrac{103}{20}$</div></details></div></div></details></section><section class="q" id="q23"><div class="qhead"><span class="no">23</span><span class="al">정답</span><span class="av">수학</span><span class="qsrc">출처 · 교재 66쪽 유형 230번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">어느 반 학생의 국어, 영어, 수학 시험 성적은 각각 정규분포를 따르고, 각 과목의 평균, 표준편차와 민수의 성적은 다음 표와 같다. (단위: 점)<table class="dist"><tr><th></th><td>국어</td><td>영어</td><td>수학</td></tr><tr><th>평균</th><td>70</td><td>60</td><td>65</td></tr><tr><th>표준편차</th><td>10</td><td>8</td><td>12</td></tr><tr><th>민수의 성적</th><td>82</td><td>70</td><td>79</td></tr></table>세 과목 중에서 민수의 성적이 반 전체에서 상대적으로 가장 좋은 과목을 구하시오.</div><details class="ans6"><summary>정답 보기</summary><div class="ans">영어</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">A 학교 학생의 수학 성적은 평균이 60점, 표준편차가 5점인 정규분포를 따르고, B 학교 학생의 수학 성적은 평균이 50점, 표준편차가 8점인 정규분포를 따른다. A 학교의 준호는 70점, B 학교의 서연이는 64점을 받았을 때, 각자의 학교에서 상대적으로 더 좋은 성적을 받은 학생을 구하시오.</div><details class="ans6"><summary>정답 보기</summary><div class="ans">준호</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">지현이네 반 학생의 국어, 영어, 수학 시험 성적은 각각 정규분포를 따르고, 국어는 평균 65점, 표준편차 10점, 영어는 평균 72점, 표준편차 9점, 수학은 평균 68점, 표준편차 7점이다. 지현이의 국어 점수는 74점, 영어 점수는 80점이다. 세 과목 중 수학 성적이 상대적으로 가장 좋으려면 지현이의 수학 점수는 최소 몇 점이어야 하는지 구하시오. (단, 점수는 자연수이다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">75점</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">어느 학교 학생의 국어 시험 성적은 평균이 65점, 표준편차가 10점인 정규분포를 따른다. 지현이의 국어 점수가 80점일 때, 아래 표준정규분포표를 이용하여 지현이의 성적은 상위 몇 <span class="nw">$\%$인지</span> 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.1915$</td></tr><tr><td>$1.0$</td><td>$0.3413$</td></tr><tr><td>$1.5$</td><td>$0.4332$</td></tr><tr><td>$2.0$</td><td>$0.4772$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">상위 $6.68\,\%$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">A 반 학생의 수학 성적은 평균 70점, 표준편차 8점인 정규분포를 따르고, B 반 학생의 수학 성적은 평균 64점, 표준편차 6점인 정규분포를 따른다. A 반의 학생 갑이 <span class="nw">$a$점</span>, B 반의 학생 을이 <span class="nw">$b$점을</span> 받았는데 두 학생의 성적은 각자의 반에서 상대적인 위치가 같고 <span class="nw">$a-b=10$이다</span>. <span class="nw">$a+b$의</span> 값을 구하시오.</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$162$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">어느 학교 학생의 국어 성적은 평균 <span class="nw">$m$점</span>, 표준편차 10점인 정규분포를 따르고, 영어 성적은 평균 70점, 표준편차 4점인 정규분포를 따른다. 이 학교 학생 은지의 국어 점수는 70점, 영어 점수는 75점이다. 은지의 국어 성적이 영어 성적보다 상대적으로 더 좋도록 하는 자연수 <span class="nw">$m$의</span> 최댓값을 구하시오.</div><details class="ans6"><summary>정답 보기</summary><div class="ans">57</div></details></div></div></details></section><section class="q" id="q24"><div class="qhead"><span class="no">24</span><span class="al">정답</span><span class="av">$0.16$</span><span class="qsrc">출처 · 교재 72쪽 실력 254번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">어느 양계장에서 판매하는 달걀 1개의 무게는 평균이 $50\,\mathrm{g}$, 표준편차가 <span class="nw">$5\,\mathrm{g}$인</span> 정규분포를 따르는데 무게가 $60\,\mathrm{g}$ 이상인 달걀을 특란으로 판정한다. 이 달걀 중에서 10000개를 임의로 택할 때, 아래 표준정규분포표를 이용하여 특란의 개수가 186 이상일 확률을 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.19$</td></tr><tr><td>$1.0$</td><td>$0.34$</td></tr><tr><td>$1.5$</td><td>$0.43$</td></tr><tr><td>$2.0$</td><td>$0.48$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.84$</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">어느 양계장에서 판매하는 달걀 1개의 무게는 평균이 $50\,\mathrm{g}$, 표준편차가 <span class="nw">$5\,\mathrm{g}$인</span> 정규분포를 따르는데 무게가 $60\,\mathrm{g}$ 이상인 달걀을 특란으로 판정한다. 이 달걀 중에서 2500개를 임의로 택할 때, 아래 표준정규분포표를 이용하여 특란의 개수가 64 이하일 확률을 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.19$</td></tr><tr><td>$1.0$</td><td>$0.34$</td></tr><tr><td>$1.5$</td><td>$0.43$</td></tr><tr><td>$2.0$</td><td>$0.48$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.98$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">어느 양계장에서 판매하는 달걀 1개의 무게는 평균이 $50\,\mathrm{g}$, 표준편차가 <span class="nw">$5\,\mathrm{g}$인</span> 정규분포를 따르는데 무게가 $60\,\mathrm{g}$ 이상인 달걀을 특란으로 판정한다. 이 달걀 중에서 2500개를 임의로 택할 때, 아래 표준정규분포표를 이용하여 특란의 개수가 43 이상 57 이하일 확률을 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.19$</td></tr><tr><td>$1.0$</td><td>$0.34$</td></tr><tr><td>$1.5$</td><td>$0.43$</td></tr><tr><td>$2.0$</td><td>$0.48$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.68$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">어느 양계장에서 판매하는 달걀 1개의 무게는 평균이 $50\,\mathrm{g}$, 표준편차가 <span class="nw">$5\,\mathrm{g}$인</span> 정규분포를 따르는데 무게가 $60\,\mathrm{g}$ 이상인 달걀을 특란으로 판정한다. 이 달걀 중에서 2500개를 임의로 택할 때, 특란의 개수가 $k$ 이상일 확률이 <span class="nw">$0.02$이다</span>. 아래 표준정규분포표를 이용하여 <span class="nw">$k$의</span> 값을 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.19$</td></tr><tr><td>$1.0$</td><td>$0.34$</td></tr><tr><td>$1.5$</td><td>$0.43$</td></tr><tr><td>$2.0$</td><td>$0.48$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">64</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">어느 양계장에서 판매하는 달걀 1개의 무게는 평균이 $50\,\mathrm{g}$, 표준편차가 <span class="nw">$5\,\mathrm{g}$인</span> 정규분포를 따르는데 무게가 $w\,\mathrm{g}$ 이상인 달걀을 특란으로 판정한다. 이 달걀 중에서 2500개를 임의로 택할 때 특란의 개수의 평균이 50이다. 아래 표준정규분포표를 이용하여 <span class="nw">$w$의</span> 값을 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.19$</td></tr><tr><td>$1.0$</td><td>$0.34$</td></tr><tr><td>$1.5$</td><td>$0.43$</td></tr><tr><td>$2.0$</td><td>$0.48$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">60</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">어느 양계장에서 판매하는 달걀 1개의 무게는 평균이 $50\,\mathrm{g}$, 표준편차가 <span class="nw">$5\,\mathrm{g}$인</span> 정규분포를 따르는데 무게가 $60\,\mathrm{g}$ 이상인 달걀을 특란으로 판정한다. 이 달걀 중에서 2500개를 임의로 택할 때 특란의 개수를 <span class="nw">$X$라</span> 하자. 아래 표준정규분포표를 이용하여 <span class="nw">$\mathrm{P}(|X-50|\ge 14)$를</span> 구하시오.<table class="ztab"><tr><th>$z$</th><th>$\mathrm{P}(0\le Z\le z)$</th></tr><tr><td>$0.5$</td><td>$0.19$</td></tr><tr><td>$1.0$</td><td>$0.34$</td></tr><tr><td>$1.5$</td><td>$0.43$</td></tr><tr><td>$2.0$</td><td>$0.48$</td></tr></table></div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.04$</div></details></div></div></details></section><script>function op(){var e=location.hash&&document.querySelector(location.hash);if(e){var d=e.querySelector("details.more6");if(d)d.open=true;e.scrollIntoView();}}window.addEventListener("hashchange",op);window.addEventListener("load",function(){op();setTimeout(op,300);});</script><nav class="pn"><a href="p5.html">← 5쪽</a><a href="p7.html">7쪽 →</a></nav><footer>호호수학 · 풀이는 올리지 않습니다. 스스로 끝까지 생각해 보세요.</footer></div></body></html>
