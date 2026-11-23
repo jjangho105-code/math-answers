@@ -1,0 +1,187 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><title>통계적 추정 주관식 · 29~32번 정답</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script><style>:root { --bg:#fbfaf9; --surface:#fff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+  --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme:dark; } }
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body { background:var(--bg); color:var(--fg); font-family:var(--font-ui); font-size:16px; line-height:1.75; word-break:keep-all; }
+.wrap { max-width:640px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:20px 48px; display:flex; flex-direction:column; gap:16px; }
+.back { font-size:14px; color:var(--muted); text-decoration:none; }
+header { display:flex; flex-direction:column; gap:4px; border-bottom:2px solid var(--fg); padding-bottom:14px; }
+.eyebrow { font-size:13px; font-weight:700; color:var(--muted); letter-spacing:0.04em; }
+h1 { margin:0; font-size:24px; font-weight:900; letter-spacing:-0.02em; }
+h1 span { color:var(--accent); }
+.sub { font-size:14px; color:var(--muted); }
+.q { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; min-width:0; scroll-margin-top:12px; }
+.qhead { display:flex; align-items:center; gap:10px; }
+.no { flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--fg); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; }
+.qtag { font-size:13px; color:var(--muted); }
+.mainans { display:flex; align-items:baseline; gap:10px; }
+.al { font-size:13px; font-weight:800; color:var(--muted); border:1.2px solid var(--line); border-radius:4px; padding:0 6px; }
+.av { font-size:22px; font-weight:800; color:var(--accent); }
+details.more6 > summary { cursor:pointer; list-style:none; display:inline-flex; align-items:center; font-size:15px; font-weight:800; color:var(--fg); border:1.5px solid var(--fg); border-radius:999px; padding:5px 16px; }
+details.more6 > summary::after { content:" ▾"; margin-left:4px; }
+details.more6[open] > summary::after { content:" ▴"; }
+details summary::-webkit-details-marker { display:none; }
+.subs { display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+.sq { border-top:1px dashed var(--line); padding-top:10px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+.sqh { display:flex; }
+.lvb { font-size:12px; font-weight:800; border:1.2px solid var(--fg); border-radius:4px; padding:0 7px; letter-spacing:0.02em; }
+.lv1 .lvb { border-color:var(--accent); color:var(--accent); }
+.lv2 .lvb { border-width:2px; border-color:var(--accent); color:var(--accent); }
+.body { min-width:0; overflow-x:auto; }
+.body p { margin:0 0 4px; }
+.fig { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.fig svg { max-width:100%; height:auto; }
+.rule { position:relative; border:1px solid var(--muted); border-radius:8px; padding:10px 12px 6px; font-size:15px; margin:8px 0 4px; }
+.rule .rl { display:block; text-align:center; font-size:12px; margin-bottom:2px; color:var(--muted); }
+.rule p { margin:0 0 4px; }
+details.ans6 > summary { cursor:pointer; display:inline-flex; font-size:14px; font-weight:700; color:var(--accent); border:1.5px solid var(--accent); border-radius:999px; padding:3px 14px; list-style:none; }
+details.ans6[open] > summary { color:var(--muted); border-color:var(--line); }
+summary:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.ans { margin-top:6px; font-size:19px; font-weight:800; color:var(--accent); }
+.katex { font-size:1.05em; }
+.katex-display { overflow-x:auto; overflow-y:hidden; margin:6px 0; }
+.pn { display:flex; justify-content:space-between; font-size:15px; font-weight:700; }
+.pn a, .pgcard { color:var(--accent); text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+.pgcard { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; }
+.pgcard b { color:var(--fg); }
+.pgcard span { font-size:13px; color:var(--muted); }
+footer { font-size:13px; color:var(--muted); text-align:center; }
+
+.nw { white-space:nowrap; }
+
+.src { font-size:13px; color:var(--muted); margin-left:auto; }
+.pgh { font-size:13px; font-weight:800; color:var(--muted); margin-top:4px; }
+.alist { background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+.arow { display:flex; align-items:center; gap:10px; padding:9px 12px; color:var(--fg); text-decoration:none; border-top:1px solid var(--line); }
+.arow:first-child { border-top:0; }
+.arow .no { width:28px; height:28px; font-size:13px; }
+.av2 { font-size:18px; font-weight:800; color:var(--accent); line-height:1.5; white-space:nowrap; }
+.src2 { font-size:12.5px; color:var(--muted); line-height:1.4; border:1px solid var(--line); border-radius:4px; padding:0 6px; white-space:nowrap; }
+.go { margin-left:auto; grid-area:go; font-size:13px; font-weight:700; color:var(--muted); white-space:nowrap; }
+
+.bogi { position:relative; border:1px solid var(--muted); border-radius:8px; padding:14px 12px 8px; margin:12px 0 4px; font-size:15px; }
+.bogi .bl { position:absolute; top:-10px; left:10px; background:var(--surface); padding:0 6px; font-size:12.5px; font-weight:800; color:var(--muted); }
+.bogi > div { margin:2px 0; }
+.bfr { display:flex; flex-wrap:wrap; gap:6px 10px; justify-content:space-around; }
+.bf { display:flex; align-items:flex-start; gap:2px; color:var(--fg); }
+.bf svg { width:118px; height:auto; }
+.cond { border:1px solid var(--muted); border-radius:8px; padding:8px 12px; margin:8px 0 6px; font-size:15px; }
+.cond > div { margin:2px 0; }
+.cbox { border:1px solid var(--muted); border-radius:6px; padding:6px 10px; margin:8px 0; text-align:center; }
+.av2 .katex, .av .katex { font-size:1em; }
+
+.tbw { margin:8px 0; overflow-x:auto; }
+.unit { text-align:right; font-size:12.5px; color:var(--muted); }
+.tb { border-collapse:collapse; margin:0 auto; font-size:14.5px; min-width:70%; }
+.tb th, .tb td { border-top:1px solid var(--muted); border-bottom:1px solid var(--muted); padding:3px 12px; text-align:center; font-weight:500; }
+.tb tr:first-child th { border-top:1.5px solid var(--fg); font-weight:700; }
+.tb tr:last-child th, .tb tr:last-child td { border-bottom:1.5px solid var(--fg); }
+.bogi.brow { display:flex; flex-wrap:wrap; gap:4px 22px; }
+.ans .katex, .av .katex { font-size:1em; }
+.av2.long { white-space:normal; }
+
+:root { --bg:#fbfaf9; --surface:#fff; --fg:#1b1a1a; --muted:#6b6464; --line:#e6e0de; --accent:#c8102e; --accent-soft:#fbeef0;
+  --font-ui:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg:#151313; --surface:#1f1c1c; --fg:#efeaea; --muted:#a59d9d; --line:#353030; --accent:#ff6b7f; --accent-soft:#3a1f24; color-scheme:dark; } }
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body { background:var(--bg); color:var(--fg); font-family:var(--font-ui); font-size:16px; line-height:1.75; word-break:keep-all; }
+.wrap { max-width:640px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:20px 48px; display:flex; flex-direction:column; gap:16px; }
+.back { font-size:14px; color:var(--muted); text-decoration:none; }
+header { display:flex; flex-direction:column; gap:4px; border-bottom:2px solid var(--fg); padding-bottom:14px; }
+.eyebrow { font-size:13px; font-weight:700; color:var(--muted); letter-spacing:0.04em; }
+h1 { margin:0; font-size:24px; font-weight:900; letter-spacing:-0.02em; }
+h1 span { color:var(--accent); }
+.sub { font-size:14px; color:var(--muted); }
+.q { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; min-width:0; scroll-margin-top:12px; }
+.qhead { display:flex; align-items:center; gap:10px; }
+.no { flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--fg); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; }
+.qtag { font-size:13px; color:var(--muted); }
+.mainans { display:flex; align-items:baseline; gap:10px; }
+.al { font-size:13px; font-weight:800; color:var(--muted); border:1.2px solid var(--line); border-radius:4px; padding:0 6px; }
+.av { font-size:22px; font-weight:800; color:var(--accent); }
+details.more6 > summary { cursor:pointer; list-style:none; display:inline-flex; align-items:center; font-size:15px; font-weight:800; color:var(--fg); border:1.5px solid var(--fg); border-radius:999px; padding:5px 16px; }
+details.more6 > summary::after { content:" ▾"; margin-left:4px; }
+details.more6[open] > summary::after { content:" ▴"; }
+details summary::-webkit-details-marker { display:none; }
+.subs { display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+.sq { border-top:1px dashed var(--line); padding-top:10px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+.sqh { display:flex; }
+.lvb { font-size:12px; font-weight:800; border:1.2px solid var(--fg); border-radius:4px; padding:0 7px; letter-spacing:0.02em; }
+.lv1 .lvb { border-color:var(--accent); color:var(--accent); }
+.lv2 .lvb { border-width:2px; border-color:var(--accent); color:var(--accent); }
+.body { min-width:0; overflow-x:auto; }
+.body p { margin:0 0 4px; }
+.fig { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.fig svg { max-width:100%; height:auto; }
+.rule { position:relative; border:1px solid var(--muted); border-radius:8px; padding:10px 12px 6px; font-size:15px; margin:8px 0 4px; }
+.rule .rl { display:block; text-align:center; font-size:12px; margin-bottom:2px; color:var(--muted); }
+.rule p { margin:0 0 4px; }
+details.ans6 > summary { cursor:pointer; display:inline-flex; font-size:14px; font-weight:700; color:var(--accent); border:1.5px solid var(--accent); border-radius:999px; padding:3px 14px; list-style:none; }
+details.ans6[open] > summary { color:var(--muted); border-color:var(--line); }
+summary:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.ans { margin-top:6px; font-size:19px; font-weight:800; color:var(--accent); }
+.katex { font-size:1.05em; }
+.katex-display { overflow-x:auto; overflow-y:hidden; margin:6px 0; }
+.pn { display:flex; justify-content:space-between; font-size:15px; font-weight:700; }
+.pn a, .pgcard { color:var(--accent); text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+.pgcard { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; }
+.pgcard b { color:var(--fg); }
+.pgcard span { font-size:13px; color:var(--muted); }
+footer { font-size:13px; color:var(--muted); text-align:center; }
+
+.nw { white-space:nowrap; }
+
+.src { font-size:13px; color:var(--muted); margin-left:auto; }
+.pgh { font-size:13px; font-weight:800; color:var(--muted); margin-top:4px; }
+.alist { background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+.arow { display:flex; align-items:center; gap:10px; padding:9px 12px; color:var(--fg); text-decoration:none; border-top:1px solid var(--line); }
+.arow:first-child { border-top:0; }
+.arow .no { width:28px; height:28px; font-size:13px; }
+.av2 { font-size:18px; font-weight:800; color:var(--accent); line-height:1.5; white-space:nowrap; }
+.src2 { font-size:12.5px; color:var(--muted); line-height:1.4; border:1px solid var(--line); border-radius:4px; padding:0 6px; white-space:nowrap; }
+.go { margin-left:auto; grid-area:go; font-size:13px; font-weight:700; color:var(--muted); white-space:nowrap; }
+
+.bogi { position:relative; border:1px solid var(--muted); border-radius:8px; padding:14px 12px 8px; margin:12px 0 4px; font-size:15px; }
+.bogi .bl { position:absolute; top:-10px; left:10px; background:var(--surface); padding:0 6px; font-size:12.5px; font-weight:800; color:var(--muted); }
+.bogi > div { margin:2px 0; }
+.bfr { display:flex; flex-wrap:wrap; gap:6px 10px; justify-content:space-around; }
+.bf { display:flex; align-items:flex-start; gap:2px; color:var(--fg); }
+.bf svg { width:118px; height:auto; }
+.cond { border:1px solid var(--muted); border-radius:8px; padding:8px 12px; margin:8px 0 6px; font-size:15px; }
+.cond > div { margin:2px 0; }
+.cbox { border:1px solid var(--muted); border-radius:6px; padding:6px 10px; margin:8px 0; text-align:center; }
+.av2 .katex, .av .katex { font-size:1em; }
+
+.tbw { margin:8px 0; overflow-x:auto; }
+.unit { text-align:right; font-size:12.5px; color:var(--muted); }
+.tb { border-collapse:collapse; margin:0 auto; font-size:14.5px; min-width:70%; }
+.tb th, .tb td { border-top:1px solid var(--muted); border-bottom:1px solid var(--muted); padding:3px 12px; text-align:center; font-weight:500; }
+.tb tr:first-child th { border-top:1.5px solid var(--fg); font-weight:700; }
+.tb tr:last-child th, .tb tr:last-child td { border-bottom:1.5px solid var(--fg); }
+.bogi.brow { display:flex; flex-wrap:wrap; gap:4px 22px; }
+.ans .katex, .av .katex { font-size:1em; }
+.av2.long { white-space:normal; }
+
+.body { line-height:2.15; text-align:left; }
+.body .katex-display { line-height:1.4; }
+.figw { display:flex; justify-content:center; color:var(--fg); margin:6px 0; }
+.figw svg { max-width:100%; height:auto; }
+table.dist, table.ztab { border-collapse:collapse; margin:8px auto; font-size:14px; line-height:1.5; }
+table.dist th, table.dist td, table.ztab th, table.ztab td { border:1px solid var(--muted); padding:3px 9px; text-align:center; font-weight:500; }
+.bogi p, .cond p { margin:2px 0; }
+.bogi .g2 { display:grid; grid-template-columns:1fr 1fr; gap:2px 12px; }
+.body p.sub { margin:2px 0; font-size:inherit; color:inherit; }
+.qsrc { font-size:13px; color:var(--muted); margin-left:auto; text-align:right; }
+.nw { white-space:nowrap; }
+.dcnd { text-align:center; margin:-4px 0 4px; }
+
+table.zt, table.dt { border-collapse:collapse; margin:8px auto; font-size:14px; line-height:1.5; }
+table.zt th, table.zt td, table.dt th, table.dt td { border:1px solid var(--muted); padding:3px 9px; text-align:center; font-weight:500; }
+table.dt.wide { font-size:13px; }
+table.dt.wide th, table.dt.wide td { padding:3px 5px; }
+.sub-q { margin:4px 0; }
+</style></head><body><div class="wrap"><a class="back" href="index.html">← 전체 정답 (한 번에 채점)</a><header><div class="eyebrow">호호수학 · 문제지 8쪽</div><h1><span>통계적 추정</span> 29~32번</h1><div class="sub">정답을 확인하고, 비슷한 문제 6개로 한 번 더 연습하세요.</div></header><section class="q" id="q29"><div class="qhead"><span class="no">29</span><span class="al">정답</span><span class="av">$0.1574$</span><span class="qsrc">출처 · 교재 86쪽 실력 304번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 10^2)$을</span> 따르는 확률변수 <span class="nw">$X$의</span> 확률밀도함수 <span class="nw">$f(x)$가</span> 모든 실수 <span class="nw">$x$에</span> 대하여 <span class="nw">$f(x)=f(80-x)$를</span> 만족시킨다. 이 모집단에서 크기가 <span class="nw">$25$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(36\le \overline{X}\le 42)$를 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1)=0.6826$,</span> <span class="nw">$\mathrm{P}(|Z|\le 2)=0.9544$,</span> <span class="nw">$\mathrm{P}(|Z|\le 3)=0.9974$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.8185$</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 8^2)$을</span> 따르는 확률변수 <span class="nw">$X$의</span> 확률밀도함수 <span class="nw">$f(x)$가</span> 모든 실수 <span class="nw">$x$에</span> 대하여 <span class="nw">$f(x)=f(100-x)$를</span> 만족시킨다. 이 모집단에서 크기가 <span class="nw">$16$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 <span class="nw">$\mathrm{P}(\overline{X}\ge 54)$를</span> 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1)=0.6826$,</span> <span class="nw">$\mathrm{P}(|Z|\le 2)=0.9544$,</span> <span class="nw">$\mathrm{P}(|Z|\le 3)=0.9974$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.0228$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ \sigma^2)$을</span> 따르는 확률변수 <span class="nw">$X$의</span> 확률밀도함수 <span class="nw">$f(x)$가</span> 모든 실수 <span class="nw">$x$에</span> 대하여 <span class="nw">$f(x)=f(60-x)$를</span> 만족시킨다. 이 모집단에서 크기가 <span class="nw">$9$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(\overline{X}\ge 32)=0.0228$이다. <span class="nw">$\sigma$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1)=0.6826$,</span> <span class="nw">$\mathrm{P}(|Z|\le 2)=0.9544$,</span> <span class="nw">$\mathrm{P}(|Z|\le 3)=0.9974$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$3$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 6^2)$을</span> 따르는 확률변수 <span class="nw">$X$의</span> 확률밀도함수 <span class="nw">$f(x)$가</span> 모든 실수 <span class="nw">$x$에</span> 대하여 <span class="nw">$f(20+x)=f(20-x)$를</span> 만족시킨다. 이 모집단에서 크기가 <span class="nw">$4$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(14\le \overline{X}\le 29)$를 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1)=0.6826$,</span> <span class="nw">$\mathrm{P}(|Z|\le 2)=0.9544$,</span> <span class="nw">$\mathrm{P}(|Z|\le 3)=0.9974$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.9759$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 12^2)$을</span> 따르는 확률변수 <span class="nw">$X$의</span> 확률밀도함수 <span class="nw">$f(x)$가</span> 모든 실수 <span class="nw">$x$에</span> 대하여 <span class="nw">$f(x)=f(64-x)$를</span> 만족시킨다. 이 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(\overline{X}\ge 35)=0.0013$이다. <span class="nw">$n$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1)=0.6826$,</span> <span class="nw">$\mathrm{P}(|Z|\le 2)=0.9544$,</span> <span class="nw">$\mathrm{P}(|Z|\le 3)=0.9974$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$144$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 12^2)$을</span> 따르는 확률변수 <span class="nw">$X$의</span> 확률밀도함수 <span class="nw">$f(x)$가</span> 모든 실수 <span class="nw">$x$에</span> 대하여 <span class="nw">$f(x)=f(64-x)$를</span> 만족시킨다. 이 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(\overline{X}\le 30)=0.1587$이다. $\mathrm{P}(26\le \overline{X}\le 34)$를 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1)=0.6826$,</span> <span class="nw">$\mathrm{P}(|Z|\le 2)=0.9544$,</span> <span class="nw">$\mathrm{P}(|Z|\le 3)=0.9974$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.84$</div></details></div></div></details></section><section class="q" id="q30"><div class="qhead"><span class="no">30</span><span class="al">정답</span><span class="av">$0.9332$</span><span class="qsrc">출처 · 교재 82쪽 유형 289번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">상자에 빨간 구슬과 흰 구슬이 <span class="nw">$4:1$의</span> 비율로 들어 있다. 이 상자에서 <span class="nw">$100$개의</span> 구슬을 임의추출할 때, 흰 구슬이 <span class="nw">$28$개</span> 이하일 확률을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.9772$</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">포대에 흰 콩과 검은 콩이 <span class="nw">$1:1$의</span> 비율로 들어 있다. 이 포대에서 <span class="nw">$100$개의</span> 콩을 임의추출할 때, 검은 콩이 <span class="nw">$60$개</span> 이상일 확률을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.0228$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">곡물 포대에 노란색 콩과 녹색 콩이 <span class="nw">$9:1$의</span> 비율로 들어 있다. 이 포대에서 <span class="nw">$400$개의</span> 콩을 임의추출할 때, 녹색 콩이 <span class="nw">$k$개</span> 이상일 확률이 <span class="nw">$0.0228$이다.</span> <span class="nw">$k$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$52$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">곡물 포대에 노란색 콩과 녹색 콩이 <span class="nw">$3:1$의</span> 비율로 들어 있다. 이 포대에서 <span class="nw">$300$개의</span> 콩을 임의추출할 때, 녹색 콩이 <span class="nw">$60$개</span> 이상 <span class="nw">$90$개</span> 이하일 확률을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.9544$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">곡물 포대에 노란색 콩과 녹색 콩이 <span class="nw">$9:1$의</span> 비율로 들어 있다. 이 포대에서 <span class="nw">$n$개의</span> 콩을 임의추출할 때, 녹색 콩의 비율이 $13\,\%$ 이상일 확률이 <span class="nw">$0.0228$이다.</span> <span class="nw">$n$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$400$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">곡물 포대에 노란색 콩과 녹색 콩이 <span class="nw">$k:1$의</span> 비율로 들어 있다. 이 포대에서 <span class="nw">$400$개의</span> 콩을 임의추출할 때, 녹색 콩이 <span class="nw">$49$개</span> 이하일 확률이 <span class="nw">$0.9332$이다.</span> 자연수 <span class="nw">$k$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 1.5)=0.4332$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$9$</div></details></div></div></details></section><section class="q" id="q31"><div class="qhead"><span class="no">31</span><span class="al">정답</span><span class="av">$36$</span><span class="qsrc">출처 · 교재 78쪽 유형 270번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 10^2)$을</span> 따르는 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(|\overline{X}-m|\le 2)\ge 0.9544$가 되도록 하는 자연수 <span class="nw">$n$의</span> 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$100$</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 15^2)$을</span> 따르는 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(|\overline{X}-m|\le 3)\ge 0.8664$가 되도록 하는 자연수 <span class="nw">$n$의</span> 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 1.5)=0.4332$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$57$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 10^2)$을</span> 따르는 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(|\overline{X}-m|&gt;2)\le 0.0124$가 되도록 하는 자연수 <span class="nw">$n$의</span> 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2.5)=0.4938$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$157$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 6^2)$을</span> 따르는 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(\overline{X}\ge m+1)\le 0.0228$이 되도록 하는 자연수 <span class="nw">$n$의</span> 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$144$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 12^2)$을</span> 따르는 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(|\overline{X}-m|\le 2)\ge 0.6826$을 만족시키는 $100$ 이하의 자연수 <span class="nw">$n$의</span> 개수를 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 1)=0.3413$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$65$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">정규분포 <span class="nw">$\mathrm{N}(m,\ 20^2)$을</span> 따르는 모집단에서 크기가 <span class="nw">$n$인</span> 표본을 임의추출할 때, 표본평균 <span class="nw">$\overline{X}$에</span> 대하여 $\mathrm{P}(|\overline{X}-m|\ge 4)\le 0.0456$이고 $\mathrm{P}(\overline{X}\ge m+5)\ge 0.0062$이다. 자연수 <span class="nw">$n$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(0\le Z\le 2)=0.4772$,</span> <span class="nw">$\mathrm{P}(0\le Z\le 2.5)=0.4938$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$100$</div></details></div></div></details></section><section class="q" id="q32"><div class="qhead"><span class="no">32</span><span class="al">정답</span><span class="av">$784$</span><span class="qsrc">출처 · 교재 87쪽 최고난도 310번</span></div><details class="more6"><summary>비슷한 문제 6개 풀기</summary><div class="subs"><div class="sq lv0"><div class="sqh"><span class="lvb">유사 1</span></div><div class="body">표본비율을 <span class="nw">$0.5$로</span> 예상할 때, 모비율에 대한 신뢰도 <span class="nw">$95\,\%$의</span> 신뢰구간의 길이가 $0.098$ 이하가 되도록 하는 표본의 크기의 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1.96)=0.95$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$400$</div></details></div><div class="sq lv0"><div class="sqh"><span class="lvb">유사 2</span></div><div class="body">표본비율을 <span class="nw">$0.9$로</span> 예상할 때, 모비율에 대한 신뢰도 <span class="nw">$99\,\%$의</span> 신뢰구간의 길이가 $0.0516$ 이하가 되도록 하는 표본의 크기의 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 2.58)=0.99$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$900$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 1</span></div><div class="body">표본비율을 <span class="nw">$0.8$로</span> 예상할 때, 모비율에 대한 신뢰도 <span class="nw">$99\,\%$의</span> 신뢰구간의 길이가 $0.056$ 이하가 되도록 하는 표본의 크기의 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 2.58)=0.99$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$1359$</div></details></div><div class="sq lv1"><div class="sqh"><span class="lvb">심화 2</span></div><div class="body">고객 <span class="nw">$100$명을</span> 임의추출하여 구한 만족 비율 <span class="nw">$\hat{p}$을</span> 이용한 모비율에 대한 신뢰도 <span class="nw">$95\,\%$의</span> 신뢰구간의 길이가 <span class="nw">$0.1568$이다.</span> <span class="nw">$\hat{p}$의</span> 값을 구하시오. (단, <span class="nw">$\hat{p}&gt;0.5$이고,</span> <span class="nw">$\mathrm{P}(|Z|\le 1.96)=0.95$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$0.8$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 1</span></div><div class="body">고객 만족 비율에 대한 사전 정보가 전혀 없을 때, 표본비율의 값에 관계없이 모비율에 대한 신뢰도 <span class="nw">$95\,\%$의</span> 신뢰구간의 길이가 항상 $0.098$ 이하가 되도록 하는 표본의 크기의 최솟값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1.96)=0.95$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$400$</div></details></div><div class="sq lv2"><div class="sqh"><span class="lvb">고난도 2</span></div><div class="body">두 호텔 A, B의 고객 중에서 각각 <span class="nw">$n_1$명,</span> <span class="nw">$n_2$명을</span> 임의추출하여 구한 만족 비율이 각각 <span class="nw">$0.8,\ 0.5$였다.</span> 두 표본으로 각각 구한 모비율에 대한 신뢰도 <span class="nw">$95\,\%$의</span> 신뢰구간의 길이가 모두 <span class="nw">$0.098$일</span> 때, <span class="nw">$n_1+n_2$의</span> 값을 구하시오. (단, <span class="nw">$\mathrm{P}(|Z|\le 1.96)=0.95$로</span> 계산한다.)</div><details class="ans6"><summary>정답 보기</summary><div class="ans">$656$</div></details></div></div></details></section><script>function op(){var e=location.hash&&document.querySelector(location.hash);if(e){var d=e.querySelector("details.more6");if(d)d.open=true;e.scrollIntoView();}}window.addEventListener("hashchange",op);window.addEventListener("load",function(){op();setTimeout(op,300);});</script><nav class="pn"><a href="p7.html">← 7쪽</a><a href="p9.html">9쪽 →</a></nav><footer>호호수학 · 풀이는 올리지 않습니다. 스스로 끝까지 생각해 보세요.</footer></div></body></html>
